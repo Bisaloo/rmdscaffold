@@ -1,0 +1,12 @@
+---
+imports:
+  - incidence2
+  - outbreaks
+creates:
+  - case_counts
+---
+
+```{r}
+case_counts <- outbreaks::covid19_england_nhscalls_2020 |> 
+  incidence(date_index = "date", groups = "nhs_region")
+```

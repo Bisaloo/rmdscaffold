@@ -1,0 +1,10 @@
+---
+imports:
+  - incidence2
+needs:
+  - case_counts
+---
+
+```{r}
+case_counts <- regroup(case_counts)
+```

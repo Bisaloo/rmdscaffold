@@ -1,0 +1,10 @@
+---
+imports:
+  - incidence2
+needs:
+  - case_counts
+---
+
+```{r}
+facet_plot(case_counts)
+```
