@@ -1,9 +1,11 @@
 ---
-imports:
-  - incidence2
 needs:
   - case_counts
 ---
+
+```{r}
+library(incidence2)
+```
 
 ```{r}
 facet_plot(case_counts)

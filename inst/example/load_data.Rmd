@@ -1,10 +1,12 @@
 ---
-imports:
-  - incidence2
-  - outbreaks
 creates:
   - case_counts
 ---
+
+```{r}
+library(incidence2)
+library(outbreaks)
+```
 
 ```{r}
 case_counts <- outbreaks::covid19_england_nhscalls_2020 |> 

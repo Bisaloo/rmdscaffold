@@ -1,9 +1,11 @@
 ---
-imports:
-  - incidence2
 needs:
   - case_counts
 ---
+
+```{r}
+library(incidence2)
+```
 
 ```{r}
 case_counts <- regroup(case_counts)
